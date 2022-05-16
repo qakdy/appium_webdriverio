@@ -13,12 +13,13 @@ exports.config = {
     maxInstances: 1,
     sync: true,
     specs: [
-        './tests/specs/**/*.js'
+        './tests/specs/**/1_coin_transactions_in_en.js' 
     ],
     capabilities:[{
         "platformName": "Android",
         "appium:automationName": "UiAutomator2",
         "appium:deviceName": "emulator-5554",
+        // "appium:udid": "20f69779",
         "appium:appPackage": "com.encryptoportfolio.app",
         "appium:appActivity": ".MainActivity"
     }]
